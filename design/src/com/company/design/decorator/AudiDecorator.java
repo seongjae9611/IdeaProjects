@@ -2,11 +2,11 @@ package com.company.design.decorator;
 
 public class AudiDecorator implements ICar{
 
-    protected Audi audi;
+    protected ICar audi;
     protected String modelName;
     protected int modelPrice;
 
-    public AudiDecorator(Audi audi, String modelName, int modelPrice) {
+    public AudiDecorator(ICar audi, String modelName, int modelPrice) {
         this.audi = audi;
         this.modelName = modelName;
         this.modelPrice = modelPrice;
